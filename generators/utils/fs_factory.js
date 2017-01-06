@@ -7,6 +7,7 @@ var sfs = editor.create(store);
 
 var msf={};
  msf.fs={};
+ msf.ejs={};
 
 //封装util也就是工具类，之后我们的逻辑就直接依赖自己的模块
 module.exports=function  () {
