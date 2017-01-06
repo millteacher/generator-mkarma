@@ -1,5 +1,6 @@
 var memFs = require('mem-fs');
 var editor = require('mem-fs-editor');
+var ejs = require('ejs');
 
 var store = memFs.create();
 var sfs = editor.create(store);
@@ -26,7 +27,8 @@ module.exports=function  () {
 		msf.fs[i]=sfs[i];
 	};
 
-	
+	//加入ejs的渲染功能
+	msf.ejs.render=ejs.render;
 
 	return msf;
 }
