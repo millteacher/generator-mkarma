@@ -47,7 +47,7 @@ module.exports = yeoman.Base.extend({
   writing: function () {
     // this.log(this.props.bowers);
     // this.log(this.props.needCli);
-    writing(this);
+    writing(this,chalk);
   },
 
   install: function () {
